@@ -2,7 +2,6 @@ import React from 'react';
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import UnreadDot from './UnreadDot';
-import '../../App.css';
 
 export default {
   title: 'Components/UnreadDot',
