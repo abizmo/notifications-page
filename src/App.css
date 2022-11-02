@@ -58,5 +58,6 @@ body {
 
   font-family: var(--ff-sans);
   font-size: var(--fs-500);
+  font-weight: var(--fw-regular);
   line-height: var(--lh-3);
 }
