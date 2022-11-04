@@ -12,11 +12,13 @@ interface HeaderProps {
 
 const Header = ({ unreadNotifications, title, onReadAll }: HeaderProps) => (
   <header className={style.header}>
-    <h1>
+    <h1 className={style.headerTitle}>
       {title}
       <Counter>{unreadNotifications}</Counter>
     </h1>
-    <button onClick={onReadAll}>Mark all as read</button>
+    <button className={style.headerAction} onClick={onReadAll}>
+      Mark all as read
+    </button>
   </header>
 );
 
