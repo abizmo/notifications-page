@@ -1,17 +1,19 @@
 import React from 'react';
 import style from './Image.module.css';
 
+export interface ImageProps {
+  imageUrl: string;
+  alt: string;
+  circle?: boolean;
+  onClick?: () => void;
+}
+
 const Image = ({
   imageUrl,
   alt,
   circle = false,
   onClick = undefined,
-}: {
-  imageUrl: string;
-  alt: string;
-  circle?: boolean;
-  onClick?: () => void;
-}) => {
+}: ImageProps) => {
   const classes = [
     style.container,
     circle ? style.circle : style.square,
