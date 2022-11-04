@@ -1,0 +1,34 @@
+.notification {
+  display: flex;
+  gap: var(--sz-2);
+  padding: var(--sz-3);
+  background: inherit;
+  border-radius: var(--br-500);
+}
+
+.notificationUnread {
+  background: var(--clr-neutral-700);
+}
+
+.avatar {
+}
+
+.notificationBody {
+  display: grid;
+  gap: var(--sz-2);
+}
+
+.notificationUser {
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-bold);
+}
+
+.notificationTimeAgo {
+  color: var(--clr-neutral-300);
+}
+
+@media (min-width: 48em) {
+  .notificationTimeAgo {
+    margin-top: var(--sz-0);
+  }
+}
