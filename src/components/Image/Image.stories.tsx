@@ -22,10 +22,3 @@ Circle.args = {
   alt: 'angela-gray',
   circle: true,
 };
-
-export const Clickable = Template.bind({});
-Clickable.args = {
-  imageUrl: 'images/image-chess.webp',
-  alt: 'chess',
-  onClick: () => {},
-};

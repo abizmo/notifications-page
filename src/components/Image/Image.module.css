@@ -1,8 +1,6 @@
 .container {
   height: var(--sz-9);
   width: var(--sz-9);
-  border: 2px solid transparent;
-  box-sizing: content-box;
 }
 
 .circle {
@@ -11,10 +9,6 @@
 
 .square {
   border-radius: var(--br-700);
-}
-
-.clickable:hover {
-  border: 2px solid var(--clr-neutral-500);
 }
 
 @media (min-width: 48em) {
