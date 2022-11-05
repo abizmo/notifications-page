@@ -10,12 +10,16 @@
   background: var(--clr-neutral-700);
 }
 
-.avatar {
+.notificationGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .notificationBody {
   display: grid;
   gap: var(--sz-2);
+  width: 100%;
 }
 
 .notificationUser {
@@ -25,6 +29,24 @@
 
 .notificationTimeAgo {
   color: var(--clr-neutral-300);
+}
+
+.notificationLink {
+  font-weight: var(--fw-bold);
+  color: inherit;
+}
+
+.notificationLink:hover {
+  color: var(--clr-secondary);
+}
+
+.notificationPicture {
+  border: 2px solid transparent;
+  border-radius: var(--br-700);
+}
+
+.notificationPicture:hover {
+  border: 2px solid var(--clr-neutral-500);
 }
 
 @media (min-width: 48em) {
