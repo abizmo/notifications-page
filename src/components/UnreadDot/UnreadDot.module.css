@@ -1,0 +1,8 @@
+.unreadDot {
+  background-color: var(--clr-primary);
+  border-radius: 50%;
+  display: inline-block;
+  height: var(--sz-1);
+  width: var(--sz-1);
+  margin-left: var(--sz-1);
+}

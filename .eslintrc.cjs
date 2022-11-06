@@ -9,6 +9,9 @@ module.exports = {
     'eslint-config-prettier',
     'plugin:storybook/recommended',
   ],
+  globals: {
+    JSX: true,
+  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
