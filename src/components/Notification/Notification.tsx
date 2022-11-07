@@ -4,8 +4,8 @@ import React, {
   PropsWithChildren,
   useContext,
 } from 'react';
+import { getTimeAgo } from '../../utils';
 
-import { getImageUrl } from '../../utils';
 import { Image } from '../Image';
 import { Message } from '../Message';
 import { UnreadDot } from '../UnreadDot';
@@ -13,31 +13,36 @@ import { UnreadDot } from '../UnreadDot';
 import style from './Notification.module.css';
 
 interface NotificationProps {
-  timeAgo: string;
+  date: string;
   unread?: boolean;
-  userName: string;
+  user: {
+    name: string;
+    avatar: string;
+  };
 }
 
-const NotificationContext: Context<NotificationProps> = createContext(
-  {} as NotificationProps,
-);
+const NotificationContext: Context<{
+  date: string;
+  unread: boolean;
+  name: string;
+}> = createContext({} as { date: string; unread: boolean; name: string });
 
 const Notification = ({
   children,
-  timeAgo,
+  date,
   unread = false,
-  userName,
+  user,
 }: PropsWithChildren<NotificationProps>) => {
   const classnames = [style.notification];
-  const avatar = getImageUrl(userName);
+  const { name, avatar } = user;
 
   if (unread) classnames.push(style.notificationUnread);
 
   return (
-    <NotificationContext.Provider value={{ timeAgo, unread, userName }}>
+    <NotificationContext.Provider value={{ date, unread, name }}>
       <div className={classnames.join(' ')}>
         <div className={style.avatar}>
-          <Image imageUrl={avatar} alt={userName} circle />
+          <Image imageUrl={avatar} alt={name} circle />
         </div>
         <div className={style.notificationBody}>{children}</div>
       </div>
@@ -56,14 +61,14 @@ Notification.Group = function NotificationGroup({
 Notification.Subject = function NotificationSubject({
   children,
 }: PropsWithChildren) {
-  const { timeAgo, unread, userName } = useContext(NotificationContext);
+  const { date, unread, name } = useContext(NotificationContext);
   return (
     <div className={style.notificationSubject}>
       <p>
-        <span className={style.notificationUser}>{userName}</span> {children}
+        <span className={style.notificationUser}>{name}</span> {children}
         <UnreadDot show={unread} />
       </p>
-      <p className={style.notificationTimeAgo}>{timeAgo}</p>
+      <p className={style.notificationTimeAgo}>{getTimeAgo(date)}</p>
     </div>
   );
 };

@@ -1,0 +1,97 @@
+[
+  {
+    "id": "1000",
+    "user": {
+      "name": "Mark Webber",
+      "avatar": "images/avatar-mark-webber.webp"
+    },
+    "link": {
+      "label": "My first tournament!",
+      "url": "#"
+    },
+    "subject": "reacted to your recent post",
+    "unread": true,
+    "date": "2022-11-06T18:20:17.659Z"
+  },
+  {
+    "id": "0999",
+    "user": {
+      "name": "Angela Gray",
+      "avatar": "images/avatar-angela-gray.webp"
+    },
+    "subject": "followed you",
+    "unread": true,
+    "date": "2022-11-06T18:15:20.179Z"
+  },
+  {
+    "id": "0998",
+    "user": {
+      "name": "Jacob Thompson",
+      "avatar": "images/avatar-jacob-thompson.webp"
+    },
+    "subject": "has joined your group",
+    "link": {
+      "label": "Chess Club",
+      "url": "#"
+    },
+    "unread": true,
+    "date": "2022-11-05T15:11:20.179Z"
+  },
+  {
+    "id": "0997",
+    "user": {
+      "name": "Rizky Hasanuddin",
+      "avatar": "images/avatar-rizky-hasanuddin.webp"
+    },
+    "subject": "sent you a private message",
+    "message": {
+      "text": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+      "url": "#"
+    },
+    "unread": false,
+    "date": "2022-11-01T18:15:20.179Z"
+  },
+  {
+    "id": "0996",
+    "user": {
+      "name": "Kimberly Smith",
+      "avatar": "images/avatar-kimberly-smith.webp"
+    },
+    "subject": "commented on your picture",
+    "picture": {
+      "src": "images/image-chess.webp",
+      "alt": "Me playing chess",
+      "url": "#"
+    },
+    "unread": false,
+    "date": "2022-10-30T18:15:20.179Z"
+  },
+  {
+    "id": "0995",
+    "user": {
+      "name": "Nathan Peterson",
+      "avatar": "images/avatar-nathan-peterson.webp"
+    },
+    "subject": "reacted to your recent post",
+    "link": {
+      "label": "5 end-game strategies to increase your win rate",
+      "url": "#"
+    },
+    "unread": false,
+    "date": "2022-10-23T18:15:20.179Z"
+  },
+  {
+    "id": "0994",
+    "user": {
+      "name": "Anna Kim",
+      "avatar": "images/avatar-anna-kim.webp"
+    },
+    "subject": "left the group",
+    "link": {
+      "label": "Chess Club",
+      "url": "#"
+    },
+    "unread": false,
+    "date": "2022-10-20T18:15:20.179Z"
+  }
+]
