@@ -1,12 +1,10 @@
 import React from 'react';
 
+import { NotificationsPage } from './pages';
+import './App.css';
+
 function App() {
-  return (
-    <>
-      <h1>Notifications Page</h1>
-      <p>testing workflow</p>
-    </>
-  );
+  return <NotificationsPage />;
 }
 
 export default App;
