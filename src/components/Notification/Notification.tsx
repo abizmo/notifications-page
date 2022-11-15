@@ -50,14 +50,12 @@ const Notification = ({
   );
 };
 
-// TODO: notificationGroup
 Notification.Group = function NotificationGroup({
   children,
 }: PropsWithChildren) {
   return <div className={style.notificationGroup}>{children}</div>;
 };
 
-// TODO: notificationSubject
 Notification.Subject = function NotificationSubject({
   children,
 }: PropsWithChildren) {
@@ -73,7 +71,6 @@ Notification.Subject = function NotificationSubject({
   );
 };
 
-// TODO: add class notificationLink
 Notification.Link = function NotificationLink({
   children,
   href,
@@ -85,7 +82,6 @@ Notification.Link = function NotificationLink({
   );
 };
 
-// TODO: notificationPicture
 Notification.Picture = function NotificationPicture({
   alt,
   src,
