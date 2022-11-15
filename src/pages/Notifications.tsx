@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 import { Header, Notification } from '../components';
 
-import data, {
-  Notification as NotificationType,
-} from '../assets/notifications.json';
+import data from '../assets/notifications.json';
+import { Notification as NotificationType } from '../assets/notifications.d';
 
 const NotifactionsPage = () => {
   const [notifications, setNotifications] = useState<NotificationType[]>([]);
