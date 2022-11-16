@@ -84,13 +84,15 @@ Notification.Link = function NotificationLink({
 
 Notification.Picture = function NotificationPicture({
   alt,
+  href,
   src,
 }: {
   alt: string;
+  href: string;
   src: string;
 }) {
   return (
-    <a href='#' className={style.notificationPicture}>
+    <a href={href} className={style.notificationPicture}>
       <Image imageUrl={src} alt={alt} />
     </a>
   );
