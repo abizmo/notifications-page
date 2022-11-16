@@ -1,0 +1,48 @@
+// Vitest Snapshot v1
+
+exports[`Notificaton > should render and matchSnapshot 1`] = `
+<div>
+  <div
+    class="notification notificationUnread"
+  >
+    <div
+      class="avatar"
+    >
+      <div
+        class="container circle"
+      >
+        <img
+          alt="Mark Webber"
+          src="images/avatar-mark-webber.webp"
+        />
+      </div>
+    </div>
+    <div
+      class="notificationBody"
+    >
+      <div
+        class="notificationSubject"
+      >
+        <p>
+          <span
+            class="notificationUser"
+          >
+            Mark Webber
+          </span>
+           
+          Hello, World!
+          <span
+            class="unreadDot"
+            role="status"
+          />
+        </p>
+        <p
+          class="notificationTimeAgo"
+        >
+          8 Days
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
