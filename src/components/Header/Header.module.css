@@ -8,6 +8,7 @@
 .headerTitle {
   align-items: center;
   display: flex;
+  color: var(--clr-neutral-100);
   gap: var(--sz-2);
   font-size: var(--fs-700);
   font-weight: var(--fw-bold);
