@@ -43,7 +43,7 @@ const NotificationsList = ({
               )}
             </Notification.Group>
             {!!notification.message && (
-              <Notification.Message>
+              <Notification.Message href={notification.message.url}>
                 {notification.message.text}
               </Notification.Message>
             )}

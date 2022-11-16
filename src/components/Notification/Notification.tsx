@@ -103,8 +103,13 @@ Notification.Picture = function NotificationPicture({
 
 Notification.Message = function NotificationMessage({
   children,
-}: PropsWithChildren) {
-  return <Message>{children}</Message>;
+  href,
+}: PropsWithChildren<{ href: string }>) {
+  return (
+    <a href={href}>
+      <Message>{children}</Message>
+    </a>
+  );
 };
 
 export default Notification;
