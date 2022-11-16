@@ -37,6 +37,7 @@ const NotificationsList = ({
               {!!notification.picture && (
                 <Notification.Picture
                   alt={notification.picture.alt}
+                  href={notification.picture.url}
                   src={notification.picture.src}
                 />
               )}
