@@ -72,18 +72,20 @@ body {
 }
 
 .container {
-  background-color: var(--clr-neutral-900);
-  padding-inline: clamp(var(--sz-3), -0.4038rem + 5.769vw, var(--sz-8));
-  margin: 0 auto var(--sz-2);
-  max-width: 46rem;
   display: grid;
   gap: 0;
+  background-color: var(--clr-neutral-900);
+  max-width: 46rem;
+  padding-inline: clamp(var(--sz-3), -0.4038rem + 5.769vw, var(--sz-8));
+  margin-inline: auto;
+  padding-bottom: var(--sz-2);
   margin-top: clamp(0px, -23rem + 50vw, 5rem);
 }
 
 @media (min-width: 46em) {
   .container {
     gap: var(--sz-2);
+    border-radius: var(--br-900);
   }
 }
 
