@@ -69,7 +69,7 @@ describe('Notificaton', () => {
     render(
       <Notification date={date} user={user} unread={false}>
         <Notification.Subject>{subject}</Notification.Subject>
-        <Notification.Message>Test Message</Notification.Message>
+        <Notification.Message href='#'>Test Message</Notification.Message>
       </Notification>,
     );
 
@@ -81,7 +81,7 @@ describe('Notificaton', () => {
       <Notification date={date} user={user} unread={false}>
         <Notification.Group>
           <Notification.Subject>{subject}</Notification.Subject>
-          <Notification.Picture alt='Test Picture' src='#' />
+          <Notification.Picture alt='Test Picture' href='#' src='#' />
         </Notification.Group>
       </Notification>,
     );

@@ -16,7 +16,7 @@ const MessageTemplate: ComponentStory<typeof Notification> = (args) => {
       <Notification.Group>
         <Notification.Subject>{notifications[3].subject}</Notification.Subject>
       </Notification.Group>
-      <Notification.Message>
+      <Notification.Message href={notifications[3].message?.url as string}>
         {notifications[3].message?.text}
       </Notification.Message>
     </Notification>
@@ -95,6 +95,7 @@ const PictureTemplate: ComponentStory<typeof Notification> = (args) => {
         <Notification.Subject>{notifications[4].subject} </Notification.Subject>
         <Notification.Picture
           alt={notifications[4].picture?.alt as string}
+          href={notifications[4].picture?.url as string}
           src={notifications[4].picture?.src as string}
         />
       </Notification.Group>
